@@ -2,7 +2,7 @@ import streamlit as st
 from zhipuai import ZhipuAI
 
 # 构造一个客户端
-client_zp =  ZhipuAI(api_key="") # 填写您自己的APIKey
+client_zp = ZhipuAI(api_key=st.secrets["ZHIPU_API_KEY"]) # 填写您自己的APIKey
 
 
 def get_zp(text):  
